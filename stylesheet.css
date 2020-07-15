@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    background-image: linear-gradient(to top, #1e3c72 0%, #c0392b 1%, #8e44ad 100%);   
+    overflow-y: hidden;
+}
+.night{
+    height: 95vh;
+    width: 96vw;
+    margin: 15px 15px 15px 15px;
+    background: url("assets/mountain.jpg");
+    background-size: cover;
+    position: relative;
+    box-shadow: 1px 2px 60px rgba(0,0,0,0.7);
+    overflow-x: hidden;
+}
+.surface{
+    height: 130px;
+    width: 1000%;
+    background: url("assets/road.png");
+    display: inline-flex;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-repeat: repeat-x;
+}
+.bus{
+    position: absolute;
+    bottom: 3%;
+    left: 25%;
+}
+@keyframes moveRight{
+    100%{
+        transform: translateX(-2950px);
+    }
+}
+@keyframes suspension{
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(3px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
+.moon{
+    margin-top: 80px;
+    margin-left: 80px;
+    height: 60px;
+    width: 60px;
+    box-shadow: -9px 6px 9px white;
+    border-radius: 50%;
+}
+.moveRight{
+    animation: moveRight 10s linear infinite; 
+}
+.suspension{
+    animation: suspension 1s linear infinite;
+}
+
